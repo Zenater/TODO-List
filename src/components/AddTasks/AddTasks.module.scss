@@ -1,0 +1,25 @@
+@import "../../styles/common";
+
+
+.inputForAddTask {
+  @include center(flex, center);
+  padding: 5px;
+  align-items: center;
+
+  .input {
+    @include input($bgInputs, 30px);
+  }
+
+  .error {
+    border: red 3px solid;
+    background-color: $bgInputs;
+  }
+
+  .addTaskButton {
+    @include buttonUpdate(30px, 35px, $bgForButtons, 5px, 1px solid black);
+  }
+
+  .errorMessage {
+    color: red;
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../styles/common";
+
+.container {
+  @include center(flex, center);
+  align-items: center;
+  margin: 20px;
+
+  input {
+    @include input($bgInputs, 30px);
+  }
+}

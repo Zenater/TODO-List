@@ -1,0 +1,14 @@
+@import "../../styles/common";
+
+.buttonsForFilterByStatus {
+  @include center(flex, center);
+  padding: 5px;
+
+  .activeFilter {
+    @include buttonForFilter(15px, 4px, 5px, $bgForButtons);
+  }
+
+  .buttonFilter {
+    @include buttonForFilter(15px, 4px, 5px, $bgSecond);
+  }
+}

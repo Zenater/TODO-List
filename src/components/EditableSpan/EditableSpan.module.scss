@@ -1,0 +1,9 @@
+.changeNameTask {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  width: 200px;
+  padding: 5px;
+}

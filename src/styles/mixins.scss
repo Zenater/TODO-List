@@ -1,0 +1,26 @@
+@import "variables";
+
+@mixin center($display,$center) {
+  display: $display;
+  justify-content: $center;
+}
+
+@mixin buttonForFilter($borderRadius,$padding,$margin,$bg) {
+  border-radius: $borderRadius;
+  padding: $padding;
+  margin: $margin;
+  background-color: $bg;
+}
+
+@mixin buttonUpdate($width,$height,$bg,$margin,$border) {
+  width: $width;
+  height: $height;
+  background-color: $bg;
+  margin: $margin;
+  border: $border;
+}
+
+@mixin input($bg,$height) {
+  background-color: $bg;
+  height: $height;
+}

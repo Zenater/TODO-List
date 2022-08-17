@@ -1,0 +1,64 @@
+@import "../../styles/common";
+
+.listTasks {
+  @include center(flex, space-between);
+  width: 100%;
+  align-items: center;
+
+  .buttonForDeleteTask {
+    @include buttonUpdate(22px, 20px, $bgForButtons, 3px, 1px solid black);
+  }
+
+  .listChangeStatusTask {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .buttonForEdit {
+    @include buttonUpdate(18px, 18px, $bgForButtons, 3px, 1px solid black);
+  }
+
+  .nameOfProfile {
+    font-family: Poppins, serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+  }
+
+  [data-tooltip] {
+    position: relative;
+
+  }
+
+  [data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: fit-content;
+    background-color: cadetblue;
+    color: #fff;
+    padding: 0.1em;
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 10px;
+    left: -120px;
+    top: 0;
+  }
+
+  [data-tooltip]:hover::after {
+    opacity: 1;
+    top: 2.5em;
+  }
+
+}
