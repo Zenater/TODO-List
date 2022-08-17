@@ -1,6 +1,3 @@
-<h1 align="center">
-  Todolist
-</h1>
 
 <img alt="screenshot" src="./src/assets/images/screenshot.png/"/>
 
